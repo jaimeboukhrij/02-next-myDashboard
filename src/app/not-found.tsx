@@ -13,7 +13,7 @@ export default function NotFound () {
               Page Not Found
             </div>
             <button className='mt-5'>
-              <a
+              <div
                 className='relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring'
               >
                 <span
@@ -26,7 +26,7 @@ export default function NotFound () {
                 >
                   <span>Go Home</span>
                 </Link>
-              </a>
+              </div>
             </button>
           </main>
         </div>

@@ -1,4 +1,4 @@
-import { PokemonGrid } from '@/pokemons'
+import { FavoritePokemons } from '@/pokemons'
 
 export const metadata = {
   title: 'Favorite pokemons',
@@ -7,9 +7,13 @@ export const metadata = {
 
 export default async function FavouritePokemonPage () {
   return (
-    <div className='flex flex-wrap justify-between items-center'>
-      <p>fav pokemons</p>
-      <PokemonGrid pokemons={[]} />
+    <div className='flex flex-col gap-5'>
+      <p className='w-full text-center py-3 text-3xl'>
+        Mis Pokemons Favoritos
+      </p>
+      <div className='flex flex-row flex-wrap justify-evenly gap-2'>
+        <FavoritePokemons />
+      </div>
     </div>
   )
 }

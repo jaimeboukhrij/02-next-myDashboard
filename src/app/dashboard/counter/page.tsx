@@ -8,7 +8,7 @@ export default function CounterPage () {
   return (
     <div className='flex flex-col justify-center items-center w-full h-full'>
       <span>Productos en el carrito</span>
-      <CarCounter />
+      <CarCounter value={10} />
     </div>
   )
 }

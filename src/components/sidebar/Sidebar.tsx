@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FaReact } from 'react-icons/fa'
 import { SiderbarMenuItem } from './SiderbarMenuItem'
-import { IoBrowsersOutline, IoCalculator, IoFootball } from 'react-icons/io5'
+import { IoBrowsersOutline, IoCalculator, IoFootball, IoHeart } from 'react-icons/io5'
 
 const menuItems = [
   {
@@ -21,6 +21,12 @@ const menuItems = [
     icon: <IoFootball size={30} />,
     title: 'Pokemons',
     subTitle: 'Generacion Estática'
+  },
+  {
+    path: '/dashboard/favorites',
+    icon: <IoHeart size={30} />,
+    title: 'Favorites',
+    subTitle: 'Global State'
   }
 ]
 
